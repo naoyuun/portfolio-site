@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>個人ポートフォリオサイト</title>
+        <meta name="description" content="制作物についてまとめました。感想お待ちしております。" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Roboto+Condensed&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    </head>
+
+    <body id="top">
+        <header class="header">
+            <h1 class="header__title">
+                <img src="img/logo.webp" alt="naoe yui" class="header__logo" />
+            </h1>
+
+            <!--ハンバーガー-->
+            <button
+                class="header__hamburger"
+                id="hamburger"
+                aria-label="メニューを開く"
+                aria-expanded="false"
+            >
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+            </button>
+
+            <!--ハンバーガー用nav-->
+            <div class="header__menu">
+                <!--light dack-->
+                <div class="header__theme-switcher theme-switcher">
+                    <button type="button" data-theme-button="light" class="theme-switcher__button">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <button type="button" data-theme-button="dark" class="theme-switcher__button">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+                <div class="main__logo">
+                    <img src="img/logo.webp" alt="naoe yui" class="hamburger-h1__img" />
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-nav__list hamburger-nav__list">
+                        <li class="main-nav__item">
+                            <a href="#my-profile" class="main-nav__link">My Profile</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#portfolio" class="main-nav__link">Portfolio</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__address">
+                    <p class="header__mail">E-mail yui.a_a@icloud.com</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <!--追従nav-->
+            <div class="main__sidebar">
+                <!--light dack-->
+                <div class="theme-switcher hamburger-nav__switcher">
+                    <button
+                        type="button"
+                        data-theme-button="light"
+                        class="theme-switcher__button hamburger-nav__button"
+                    >
+                        <i class="fa-solid fa-sun is-active"></i>
+                    </button>
+                    <button
+                        type="button"
+                        data-theme-button="dark"
+                        class="theme-switcher__button hamburger-nav__button"
+                    >
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+                <div class="main__logo">
+                    <img src="img/logo.webp" alt="naoe yui" />
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="#my-profile" class="main-nav__link">My Profile</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#portfolio" class="main-nav__link">Portfolio</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="main__address main-nav__address">
+                    <p class="main__mail">E-mail yui.a_a@icloud.com</p>
+                </div>
+            </div>
+
+            <!--プロフィール-->
+            <img src="img/room.webp" alt="room" class="main__image" />
+            <section id="my-profile" class="profile">
+                <img src="img/fase.webp" alt="face" class="profile__img" />
+                <div class="profile__text">
+                    <h2 class="profile__heading">My Profile</h2>
+                    <div class="profile__content">
+                        <p class="profile__name">直枝 悠衣</p>
+                        <table class="profile__table">
+                            <tr class="profile__row">
+                                <th class="profile__term">生年月日</th>
+                                <td class="profile__data">2000/02/23</td>
+                                <th class="profile__term">血液型</th>
+                                <td class="profile__data">Ｏ型</td>
+                            </tr>
+                            <tr class="profile__row">
+                                <th class="profile__term">趣味</th>
+                                <td colspan="3" class="profile__data">
+                                    ゲーム、映画館で映画を見ること
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="profile__description">UIやLive2Dにも興味がある。</p>
+                        <p class="profile__description">
+                            ゲームのメニュー画面を見るのが好きで
+                            デザインやレイアウトについて学ぼうと思った。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--ポートフォリオ-->
+            <section id="portfolio" class="portfolio">
+                <h2 class="portfolio__heading">Portfolio</h2>
+
+                <details class="portfolio-item">
+                    <summary class="portfolio-item__summary">
+                        WEB
+                        <img class="portfolio__icon" src="img/html.webp" alt="HTML" />
+                        <img class="portfolio__icon" src="img/css.webp" alt="CSS" />
+                        <img class="portfolio__icon" src="img/js.webp" alt="JavaScript" />
+                    </summary>
+                    <section class="portfolio-item__content">
+                        <h3 class="portfolio-item__title">
+                            <a
+                                href="https://naoyuun.github.io/cafe-page/"
+                                class="portfolio-item__link"
+                            >
+                                <img class="portfolio__image" src="img/portfilio-05.webp" alt="" />
+                            </a>
+                        </h3>
+                        <div class="portfolio-item__tools">
+                            <img class="portfolio__icon" src="img/html.webp" alt="HTML" />
+                            <img class="portfolio__icon" src="img/css.webp" alt="CSS" />
+                            <img class="portfolio__icon" src="img/js.webp" alt="JavaScript" />
+                        </div>
+                        <p class="portfolio-item__comment">
+                            製作時間25時間 <br />
+                            マーメイドコアをコンセプト <br />
+                            text-alignとmargin-inlineの違い、display
+                            blockの使い道などcssについて理解を深めた。
+                        </p>
+                    </section>
+                </details>
+
+                <details class="portfolio-item">
+                    <summary class="portfolio-item__summary">
+                        illustrator
+                        <img class="portfolio__icon" src="img/ai.webp" alt="ai" />
+                    </summary>
+                    <section class="portfolio-item__content">
+                        <h3 class="portfolio-item__title">
+                            <a href="PDF/profile.pdf" class="portfolio-item__link"
+                                ><img class="portfolio__image" src="img/portfilio-07.webp" alt="" />
+                            </a>
+                        </h3>
+                        <div class="portfolio-item__tools">
+                            <img class="portfolio__icon" src="img/ai.webp" alt="" />
+                        </div>
+                        <p class="portfolio-item__comment">
+                            ポートフォリオのデザイン（544kb 約2.5時間）使用ソフト illustrator
+                            <br />名刺とデザインを統一。
+                        </p>
+                    </section>
+
+                    <section class="portfolio-item__content">
+                        <h3 class="portfolio-item__title">
+                            <a href="PDF/card.pdf" class="portfolio-item__link">
+                                <img class="portfolio__image" src="img/portfilio-07.webp" alt="" />
+                            </a>
+                        </h3>
+                        <div class="portfolio-item__tools">
+                            <img class="portfolio__icon" src="img/ai.webp" alt="" />
+                        </div>
+                        <p class="portfolio-item__comment">
+                            名刺（77kb 約3時間） 使用ソフトillustrator
+                            <br />初のillustratorでの作品。シンプルに見やすさを追求したもの。ロゴの作成も行ったきっかけ。
+                            四角いブロックをイメージして作った。
+                        </p>
+                    </section>
+
+                    <section class="portfolio-item__content">
+                        <h3 class="portfolio-item__title">
+                            <a href="PDF/pearl-tide-flyer.pdf" class="portfolio-item__link"
+                                ><img class="portfolio__image" src="img/portfilio-05.webp" alt="" />
+                            </a>
+                        </h3>
+                        <div class="portfolio-item__tools">
+                            <img class="portfolio__icon" src="img/ai.webp" alt="ai" />
+                            <img class="portfolio__icon" src="img/ps.webp" alt="ps" />
+                        </div>
+                        <p class="portfolio-item__comment">
+                            Pearl Tideのフライヤー（2081kb 約10時間）<br />
+                            情報の整理、素材の作成や収集など作業の整理に時間がかかった。
+                            3枚目の整列したものの方がやはり見やすいと感じた。
+                        </p>
+                    </section>
+
+                    <section class="portfolio-item__content">
+                        <h3 class="portfolio-item__title">
+                            <a href="PDF/cafe.pdf" class="portfolio-item__link"
+                                ><img class="portfolio__image" src="img/portfilio-09.webp" alt="" />
+                            </a>
+                        </h3>
+                        <div class="portfolio-item__tools">
+                            <img class="portfolio__icon" src="img/ai.webp" alt="ai" />
+                            <img class="portfolio__icon" src="img/ps.webp" alt="ps" />
+                        </div>
+                        <p class="portfolio-item__comment">
+                            飲食店のバナー（472kb 約5時間）<br />
+                            画像を2枚使うとレイアウトが変わって調整が難しかった。
+                        </p>
+                    </section>
+                </details>
+
+                <details class="portfolio-item">
+                    <summary class="portfolio-item__summary">
+                        Photoshop
+                        <img class="portfolio__icon" src="img/ps.webp" alt="icon" />
+                    </summary>
+                    <section class="portfolio-item__content">
+                        <h3 class="portfolio-item__title">
+                            <a href="PDF/job.pdf" class="portfolio-item__link"
+                                ><img class="portfolio__image" src="img/portfilio-08.webp" alt=""
+                            /></a>
+                        </h3>
+                        <div class="portfolio-item__tools">
+                            <img class="portfolio__icon" src="img/ps.webp" alt="icon" />
+                        </div>
+                        <p class="portfolio-item__comment">
+                            転職のバナー（722kb 約9時間）<br />
+                            illustratorとPhotoshopの使い方の違いが分かった。
+                            意外と文字を大きく見せるレイアウトって難しいなと感じた。
+                        </p>
+                    </section>
+                </details>
+
+                <details class="portfolio-item">
+                    <summary class="portfolio-item__summary">
+                        その他
+                        <img class="portfolio__icon" src="img/figma.webp" alt="icon" />
+                    </summary>
+                    <section class="portfolio-item__content">
+                        <h3 class="portfolio-item__title">
+                            <a href="PDF/tasogaredou.pdf" class="portfolio-item__link"
+                                ><img class="portfolio__image" src="img/portfilio-06.webp" alt=""
+                            /></a>
+                        </h3>
+                        <div class="portfolio-item__tools">
+                            <img class="portfolio__icon" src="img/figma.webp" alt="icon" />
+                        </div>
+                        <p class="portfolio-item__comment">
+                            喫茶 黄昏堂のデザイン-figma-（8577kb 約6時間）<br />
+                            このまま使うと文字の配置や横幅など気になるところがでてきたので修正しながらWEBサイトを作成中。
+                        </p>
+                    </section>
+                </details>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__message">Thank you for visiting.</p>
+            <!--SNSやる場合ここに追加-->
+            <p class="footer__mail">
+                E-mail<br />
+                yui.a_a@icloud.com
+            </p>
+            <a href="#top" class="footer__top-link">TOPページに戻る</a>
+            <p class="footer__copyright">
+                <small class="footer__copyright-text">&COPY;MY-site0223</small>
+            </p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
